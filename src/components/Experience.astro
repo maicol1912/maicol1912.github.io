@@ -1,0 +1,29 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+const EXPERIENCIE = [
+  {
+    date: 'Diciembre 2022 - Actualmente...',
+    title: 'Analista de software',
+    company: 'Grupo Uribe',
+    description:
+      'Me especializo en el diseño y desarrollo de soluciones de software utilizando Express y NestJS para el desarrollo backend. Para las interfaces de usuario, utilizo Angular y Ngrx para garantizar experiencias de usuario fluidas y eficientes. Mi experiencia se extiende a la administración y gestión de bases de datos SQL como PostgreSQL y bases de datos NoSQL como MongoDB. En el despliegue de aplicaciones en entornos de producción, aprovecho Docker, Kubernetes, Jenkins y AWS para asegurar una infraestructura robusta y escalable. Tengo una amplia experiencia en el desarrollo de integraciones con servicios externos como Datacredito para aplicaciones empresariales, mejorando la funcionalidad e integración del sistema. Además, he contribuido a la creación, soporte y mejora de aplicaciones utilizando Spring Boot y JBoss, fomentando el desarrollo de soluciones confiables en diversos entornos empresariales.',
+  },
+  {
+    date: 'Diciembre 2021 - Diciembre 2022',
+    title: 'Freelance Desarrollador de software',
+    company: 'Freelancer',
+    description:
+      'Me especializo en el diseño y desarrollo de soluciones backend utilizando Spring Boot, asegurando una arquitectura robusta y escalable. En el frontend, destaco en la creación de interfaces de usuario intuitivas con Angular, mejorando las experiencias de usuario en diversas aplicaciones. La gestión de bases de datos SQL como PostgreSQL y MySQL es algo natural para mí, manejando datos de manera eficiente y segura. Mi experiencia se extiende al despliegue de aplicaciones en entornos de producción usando Docker, Kubernetes, Jenkins y AWS, optimizando el rendimiento y la fiabilidad. La gestión de proyectos es una fortaleza clave, complementada por mi habilidad para colaborar eficazmente dentro de equipos y comunicarme de manera fluida con los clientes, asegurando que los objetivos del proyecto se cumplan con precisión y profesionalismo.',
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
