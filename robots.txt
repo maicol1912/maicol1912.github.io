@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maicoldev.portafolio.dev/sitemap-index.xml
