@@ -1,9 +1,6 @@
 ---
-title: "Portfolio de Maicol Arcila - Desarrollador FullStack con más de 2 años de experiencia"
-description: "Comunícate conmigo para el desarrollo de cualquier aplicación que quieras realizar"
----
-
 import Layout from '@/layouts/Layout.astro';
+
 import AboutMe from '@/components/AboutMe.astro';
 import Briefcase from '@/components/icons/Briefcase.astro';
 import CodeIcon from '@/components/icons/Code.astro';
@@ -12,8 +9,11 @@ import ProfileCheck from '@/components/icons/ProfileCheck.astro';
 import Projects from '@/components/Projects.astro';
 import SectionContainer from '@/components/SectionContainer.astro';
 import Hero from '@/components/Hero.astro';
+---
 
-<Layout title={title} description={description}>
+<Layout
+  title="Porfolio de Maicol Arcila - Desarrollador FullStack con mas de 2 años de experiencia"
+  description="Comunicate conmigo para el desarrollo de cualquier aplicacion que quieras realizar">
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
       <Hero />
@@ -21,7 +21,8 @@ import Hero from '@/components/Hero.astro';
   </main>
   <div class="space-y-24">
     <SectionContainer id="experiencia">
-      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
         <Briefcase class="size-8" />
         Experiencia laboral
       </h2>
@@ -29,7 +30,8 @@ import Hero from '@/components/Hero.astro';
     </SectionContainer>
 
     <SectionContainer id="proyectos">
-      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
         <CodeIcon class="size-7" />
         Proyectos Personales
       </h2>
@@ -37,7 +39,8 @@ import Hero from '@/components/Hero.astro';
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
-      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white">
         <ProfileCheck class="size-8" />
         Sobre mí
       </h2>
