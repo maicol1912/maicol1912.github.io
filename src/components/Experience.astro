@@ -1,0 +1,37 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+const EXPERIENCIE = [
+    {
+    date: 'Junio 2022 - Actualmente',
+    title: 'Analista de software',
+    company: 'Sumas - Medellín, Colombia',
+    description: 
+      '• Diseñé y desarrollé una aplicación web que permite a más de 4,000 aliados comerciales gestionar créditos y recaudos en tiempo real, integrando el sistema con el core bancario y mejorando la eficiencia operativa en la compañia.\n\n' +
+      '• Construí un sistema de reportes a centrales de riesgo, agilizando el proceso mensual de envío de información de clientes y aumentando significativamente la productividad operativa.\n\n' +
+      '• Participé activamente en la migración del core bancario, asegurando la continuidad de servicios críticos y la correcta transferencia de datos históricos, para dicha migracion.\n\n' +
+      '• Optimicé procesos críticos de base de datos mediante la implementación de particionamiento de tablas, ajuste de planes de ejecución, reescritura de queries complejas y creación de vistas materializadas, logrando una mejora significativa en el rendimiento general de las aplicaciones.\n\n' +
+      '• Contribuí en el desarrollo del software de cobranzas de la compañía, implementando APIs robustas para la extracción y procesamiento de datos de cartera, y desarrollando funcionalidades clave en el backend que optimizaron el proceso de gestión de cobros.\n\n' +
+      '• Contribui en la Implementacion una pasarela de pagos web para recaudos, permitiendo a los clientes realizar pagos en línea de manera segura y automatizada, incrementando la tasa de recaudo mensual y mejorando la experiencia del usuario final.',
+  },
+  {
+    date: 'Diciembre 2021 - Diciembre 2022',
+    title: 'Freelance Desarrollador de software',
+    company: 'Freelancer',
+    description:
+    '• Me enfoqué en crear soluciones backend con Spring Boot, asegurando que todo funcionara de manera sólida y escalable.\n\n' +
+    '• En el lado del frontend, desarrollé interfaces intuitivas con Angular, lo que mejoró la experiencia de los usuarios.\n\n' +
+    '• Trabaje con diferentes bases de datos como PostgreSQLy MySQL buscando siempre la mejor manera de extraer y representar la informacion\n\n' +
+    '• Desplegué aplicaciones en producción usando herramientas como Docker, Jenkins y AWS, optimizando el rendimiento y la fiabilidad.\n\n'
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
